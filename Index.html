@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador Freelancer</title>
+
+    <!--Agregar normalize-->
+    <link rel="preload" href="css/normalize.css" as="style"> <!--Mayor performance-->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--Agregar fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="httudps://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!--Agregar estilo css-->
+    <link rel="preload" href="css/style.css" as="style"> <!--Mayor performance-->
+    <link rel="stylesheet" href="css/style.css"> <!--rel indica que la relacion es que es una hoja de estilo-->
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Diego Rocha <span>Freelancer</span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Diseño y Desarrollo Web Freelancer</h2>
+
+            <img src="img/Ubicacion.svg">
+            <p>Guadalajara, Jalisco</p>
+    
+            <a href="#">Conectar</a>
+        </div>
+    </section>
+
+    <main>
+        <h2>Mis Servicios</h2>
+
+        <section>
+            <h3>Diseño Web</h3>
+            <img src="img/Paleta.svg">
+            <p>Donec tincidunt quam mauris, id auctor justo rhoncus sed. Praesent mauris elit, tincidunt sit amet ex
+                sed, condimentum dignissim purus. Integer et efficitur ipsum.</p>
+        </section>
+
+        <section>
+            <h3>Aplicaciones Web</h3>
+            <img src="img/Apple.svg">
+            <img src="img/Android.svg">
+            <p>Nulla facilisi. Etiam in felis nec massa mattis rhoncus condimentum ac justo. Mauris feugiat sapien at
+                dui sodales, eget imperdiet risus mollis. Proin sed gravida mi. Pellentesque tempor sapien eros, vitae
+                porta risus ornare eu.</p>
+        </section>
+
+        <section>
+            <h3>E-commerce</h3>
+            <img src="img/Carrito_compras.svg">
+            <p>Cras ut tempus diam. Curabitur euismod convallis nisl. Proin id lorem turpis. Praesent condimentum dolor
+                eu congue sodales. Sed ut neque nulla. </p>
+        </section>
+    </main>
+
+    <section>
+        <h2>Contacto</h2>
+        <form> <!--Lo que este dentro de este form se puede anviar a un servidor para meterlo a una base de datos -->
+            <fieldset> <!--Para englobar todos los campos del formulario-->
+                <legend>Contáctanos llenando todos los campos</legend>
+                <!--Para dar indicaciones dentro del formulario-->
+
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Ingresa tu nombre aqui" />
+                </div>
+
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Ingresa tu teléfono aqui" />
+                </div>
+
+                <div>
+                    <label>Correo</label>
+                    <input type="mail" placeholder="Ingresa tu e-mail aqui" />
+                </div>
+
+                <div>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>Todos los derechos reservados. ©Diego Rocha Freelancer </p>
+    </footer>
+</body>
+
+</html>
+
+
+<!--
+    Alt+shift+F para identar codigo
+    Alt+z para acomodar el codigo en la ventana
+    Ctrl+shift+p, buscar user snippets para css y abrimos css
+-->
