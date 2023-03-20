@@ -21,7 +21,7 @@ html{
 body{
     font-size: 16px;/*Ahora 1rem = 10px*/
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%); /*Cssmatic para hacer degradados y copiar el codigo*/
 }
 /*---------------------------------------------------*/
 
@@ -50,6 +50,16 @@ body{
     .boton{
         width: auto;
     }
+}
+
+.sombra{
+    /*-webkit-box-shadow: 0px 7px 16px 1px rgba(84,82,84,0.6);
+    -moz-box-shadow: 0px 7px 16px 1px rgba(84,82,84,0.6); 
+    Estos prefijos son para soporte en navegadores, pero 95% los soportan, esto lo vemos en la página "can I use.com"*/
+    box-shadow: 0px 7px 16px 1px rgba(84,82,84,0.6);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 /*      Tipografias     */
@@ -118,6 +128,7 @@ h1, h2, h3{
     background-position: center center;
     height: 410px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero{
@@ -137,5 +148,44 @@ h1, h2, h3{
 .contenido-hero p{
     color: var(--blanco)
 }
+
+/*      Servicios       */
+@media (min-width: 768px) { /*if tamaño >= 768*/
+    .servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /*Definimos el ancho de cada columna
+        Usamos fr para dividir en fracciones, un entero en 3 fracciones*/
+        grid-template-rows: 200; /*Definimos el alto de cada fila*/
+        column-gap: 1rem; /*Separacion entre columnas*/
+    }
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: 400;
+}
+
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 /*Practicar flex: https://flexboxfroggy.com/#es*/
