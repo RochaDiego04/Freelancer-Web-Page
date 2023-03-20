@@ -79,44 +79,46 @@
                     eu congue sodales. Sed ut neque nulla. </p>
             </section>
         </div> <!--cierre de .servicios-->
+
+
+        <section>
+            <h2>Contacto</h2>
+            <form class="formulario">
+                <!--Lo que este dentro de este form se puede anviar a un servidor para meterlo a una base de datos -->
+                <fieldset> <!--Para englobar todos los campos del formulario-->
+                    <legend>Contáctanos llenando todos los campos</legend>
+                    <!--Para dar indicaciones dentro del formulario-->
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Ingresa tu nombre aqui" />
+                        </div>
+
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Ingresa tu teléfono aqui" />
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="mail" placeholder="Ingresa tu e-mail aqui" />
+                        </div>
+
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div> <!--.contenedor-campos-->
+
+                        <div class="alinear-derecha flex">
+                            <input class="boton w-sm-100" type="submit" value="Enviar">
+                        </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
 
-    <section>
-        <h2>Contacto</h2>
-        <form> <!--Lo que este dentro de este form se puede anviar a un servidor para meterlo a una base de datos -->
-            <fieldset> <!--Para englobar todos los campos del formulario-->
-                <legend>Contáctanos llenando todos los campos</legend>
-                <!--Para dar indicaciones dentro del formulario-->
-
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Ingresa tu nombre aqui" />
-                </div>
-
-                <div>
-                    <label>Teléfono</label>
-                    <input type="tel" placeholder="Ingresa tu teléfono aqui" />
-                </div>
-
-                <div>
-                    <label>Correo</label>
-                    <input type="mail" placeholder="Ingresa tu e-mail aqui" />
-                </div>
-
-                <div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-
-            </fieldset>
-        </form>
-    </section>
-
-    <footer>
+    <footer class="footer">
         <p>Todos los derechos reservados. ©Diego Rocha Freelancer </p>
     </footer>
 </body>
